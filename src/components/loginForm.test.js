@@ -3,18 +3,6 @@ import userEvent from "@testing-library/user-event";
 import CatchError from "../components/CatchError";
 import LoginForm from "./LoginForm";
 
-/* 
-jest.mock("./LoginForm");
-
-describe("get()", () => {
-  it("should fetch ip when send request", async () => {
-    get.mockResolvedValueOnce({ ip: "100.100.100.100" });
-    const data = await get();
-    expect(data.ip).toBe("100.100.100.100");
-  });
-});
- */
-
 describe("<LoginForm>", () => {
   test("value of input is too short", async () => {
     render(<LoginForm />);
